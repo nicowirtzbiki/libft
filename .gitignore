@@ -1,0 +1,25 @@
+# Arquivos objeto
+*.o
+
+# Biblioteca compilada
+libft.a
+
+# Executáveis de teste
+test
+a.out
+
+# Arquivos temporários de compilação
+*.gch
+*.exe
+
+# IDE / editor
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# MacOS
+.DS_Store
+
+# Logs
+*.log
