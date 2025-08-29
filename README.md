@@ -1,4 +1,4 @@
-# 🐍 Libft – My Own C Library
+# 🦆 Libft – My Own C Library
 
 Welcome to my **Libft project**, part of the **42 school curriculum**!  
 This repository contains my own implementation of a collection of **standard C library functions**, serving as a foundation for future projects and demonstrating solid understanding of C fundamentals. 💻
