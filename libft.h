@@ -26,7 +26,7 @@ int	ft_isprint(int c);
 int	ft_toupper(int c);
 
 // 7
-// int	ft_tolower(int c);
+int	ft_tolower(int c);
 
 // 8
 // size_t	ft_strlen(const char *s);
