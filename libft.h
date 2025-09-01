@@ -8,46 +8,46 @@
 /* Parte 1 - Funções da libc reimplementadas */
 
 // 1
-int		ft_isalpha(int c);
+int	ft_isalpha(int c);
 
 // 2
-int		ft_isdigit(int c);
+int	ft_isdigit(int c);
 
 // 3
-int		ft_isalnum(int c);
+int	ft_isalnum(int c);
 
 // 4
-int		ft_isascii(int c);
+int	ft_isascii(int c);
 
 // 5
-int		ft_isprint(int c);
+int	ft_isprint(int c);
 
 // 6
-// size_t	ft_strlen(const char *s);
+int	ft_toupper(int c);
 
 // 7
-// void	*ft_memset(void *s, int c, size_t n);
+// int	ft_tolower(int c);
 
 // 8
-// void	ft_bzero(void *s, size_t n);
+// size_t	ft_strlen(const char *s);
 
 // 9
-// void	*ft_memcpy(void *dest, const void *src, size_t n);
+// void	*ft_memset(void *s, int c, size_t n);
 
 // 10
-// void	*ft_memmove(void *dest, const void *src, size_t n);
+// void	ft_bzero(void *s, size_t n);
 
 // 11
-// size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+// void	*ft_memcpy(void *dest, const void *src, size_t n);
 
 // 12
-// size_t	ft_strlcat(char *dst, const char *src, size_t size);
+// void	*ft_memmove(void *dest, const void *src, size_t n);
 
 // 13
-// int		ft_toupper(int c);
+// void	*ft_memchr(const void *s, int c, size_t n);
 
 // 14
-// int		ft_tolower(int c);
+// int	ft_memcmp(const void *s1, const void *s2, size_t n);
 
 // 15
 // char	*ft_strchr(const char *s, int c);
@@ -56,19 +56,19 @@ int		ft_isprint(int c);
 // char	*ft_strrchr(const char *s, int c);
 
 // 17
-// int		ft_strncmp(const char *s1, const char *s2, size_t n);
+// int	ft_strncmp(const char *s1, const char *s2, size_t n);
 
 // 18
-// void	*ft_memchr(const void *s, int c, size_t n);
+// size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 
 // 19
-// int		ft_memcmp(const void *s1, const void *s2, size_t n);
+// size_t	ft_strlcat(char *dst, const char *src, size_t size);
 
 // 20
 // char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 
 // 21
-// int		ft_atoi(const char *nptr);
+// int	ft_atoi(const char *nptr);
 
 // 22
 // void	*ft_calloc(size_t nmemb, size_t size);
