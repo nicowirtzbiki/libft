@@ -15,7 +15,7 @@ ft_isalpha.c \
 ft_isdigit.c \
 ft_isalnum.c \
 ft_isascii.c \
-# ft_isprint.c \
+ft_isprint.c \
 # ft_toupper.c \
 # ft_tolower.c \
 # ft_strlen.c \
@@ -73,4 +73,4 @@ re: fclean all
 
 # Testar
 test: all
-	gcc -I. mains/main_isascii.c libft.a -o test
+	gcc -I. mains/main_isprint.c libft.a -o test
