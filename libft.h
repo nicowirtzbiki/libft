@@ -17,7 +17,7 @@ int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 
 // 4
-// int		ft_isascii(int c);
+int		ft_isascii(int c);
 
 // 5
 // int		ft_isprint(int c);
