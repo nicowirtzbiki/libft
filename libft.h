@@ -32,7 +32,7 @@ int	ft_tolower(int c);
 size_t	ft_strlen(const char *s);
 
 // 9
-// void	*ft_memset(void *s, int c, size_t n);
+void	*ft_memset(void *s, int c, size_t n);
 
 // 10
 // void	ft_bzero(void *s, size_t n);
