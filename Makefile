@@ -25,7 +25,7 @@ ft_memcpy.c \
 ft_memmove.c \
 ft_memchr.c \
 ft_memcmp.c \
-# ft_strchr.c \
+ft_strchr.c \
 # ft_strrchr.c \
 # ft_strncmp.c \
 # ft_strlcpy.c \
@@ -73,4 +73,4 @@ re: fclean all
 
 # Testar
 test: all
-	gcc -I. mains/main_memcmp.c libft.a -o test
+	gcc -I. mains/main_strchr.c libft.a -o test
