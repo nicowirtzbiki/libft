@@ -53,7 +53,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strchr(const char *s, int c);
 
 // 16
-// char	*ft_strrchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);
 
 // 17
 // int	ft_strncmp(const char *s1, const char *s2, size_t n);
