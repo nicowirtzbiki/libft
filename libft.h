@@ -68,7 +68,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 
 // 21
-// int	ft_atoi(const char *nptr);
+int	ft_atoi(const char *nptr);
 
 // 22
 // void	*ft_calloc(size_t nmemb, size_t size);

@@ -31,7 +31,7 @@ ft_strncmp.c \
 ft_strlcpy.c \
 ft_strlcat.c \
 ft_strnstr.c \
-# ft_atoi.c \
+ft_atoi.c \
 # ft_calloc.c \
 # ft_strdup.c \
 # ft_substr.c \
@@ -73,4 +73,4 @@ re: fclean all
 
 # Testar
 test: all
-	gcc -I. mains/main_strnstr.c libft.a -o test
+	gcc -I. mains/main_atoi.c libft.a -o test
