@@ -1,6 +1,17 @@
-# O make vai rodar a regra all, que compila seus .c em .o e depois junta na libft.a.
-# Depois, na regra test, ele compila o main.c junto com a libft.a e gera um executável chamado test.
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: nwirtzbi <nwirtzbi@student.42porto.com>    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2025/10/15 11:23:25 by nwirtzbi          #+#    #+#              #
+#    Updated: 2025/10/16 17:34:31 by nwirtzbi         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
 
+# O make vai rodar a regra all: ele compila os arquivos.c em .o e depois junta na libft.a.
+# Depois, na regra test, ele compila o main.c junto com a libft.a e gera um executável chamado test.
 
 # Nome da biblioteca
 NAME = libft.a
