@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nwirtzbi <nwirtzbi@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: nico <nico@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 17:04:05 by nwirtzbi          #+#    #+#             */
-/*   Updated: 2025/10/15 17:57:13 by nwirtzbi         ###   ########.fr       */
+/*   Updated: 2025/10/21 14:50:48 by nico             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <stddef.h>  // para size_t
+# include <limits.h> // SIZE_MAX
 # include <stdlib.h>  // para malloc, free
 # include <unistd.h>  // para write
 
@@ -60,31 +61,31 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 // 21
 int		ft_atoi(const char *nptr);
 // 22
-// void	*ft_calloc(size_t nmemb, size_t size);
+void	*ft_calloc(size_t nmemb, size_t size);
 // 23
-// char	*ft_strdup(const char *s);
+char	*ft_strdup(const char *s);
 /* Parte 2 - Funções adicionais */
 // 24
-// char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 // 25
-// char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strjoin(char const *s1, char const *s2);
 // 26
-// char	*ft_strtrim(char const *s1, char const *set);
+char	*ft_strtrim(char const *s1, char const *set);
 // 27
 // char	**ft_split(char const *s, char c);
 // 28
-// char	*ft_itoa(int n);
+char	*ft_itoa(int n);
 // 29
-// char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 // 30
-// void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 // 31
-// void	ft_putchar_fd(char c, int fd);
+void	ft_putchar_fd(char c, int fd);
 // 32
-// void	ft_putstr_fd(char *s, int fd);
+void	ft_putstr_fd(char *s, int fd);
 // 33
-// void	ft_putendl_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
 // 34
-// void	ft_putnbr_fd(int n, int fd);
+void	ft_putnbr_fd(int n, int fd);
 
 #endif
