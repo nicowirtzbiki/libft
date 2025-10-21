@@ -6,7 +6,7 @@
 #    By: nwirtzbi <nwirtzbi@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/15 11:23:25 by nwirtzbi          #+#    #+#              #
-#    Updated: 2025/10/16 17:34:31 by nwirtzbi         ###   ########.fr        #
+#    Updated: 2025/10/16 17:42:49 by nwirtzbi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -84,4 +84,4 @@ re: fclean all
 
 # Testar
 test: all
-	gcc -I. mains/main_atoi.c libft.a -o test
+	gcc -I. mains/main_bzero.c libft.a -o test

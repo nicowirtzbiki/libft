@@ -1,28 +1,39 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nwirtzbi <nwirtzbi@student.42porto.com>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/10/16 18:22:23 by nwirtzbi          #+#    #+#             */
+/*   Updated: 2025/10/16 18:33:36 by nwirtzbi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char *d;
-	const unsigned char *s;
+	unsigned char		*d;
+	const unsigned char	*s;
+	size_t				i;
 
 	if (!dest && !src)
-        	return NULL;
-
+		return (NULL);
 	d = (unsigned char *) dest;
 	s = (const unsigned char *) src;
-
-	if (d > s) // copiar de trás pra frente
+	if (d > s)
 	{
-		size_t i = n;       // começamos com i = n
+		i = n;
 		while (i > 0)
 		{
-			i--;            // decrementa primeiro
-			d[i] = s[i];    // copia o byte
+			i--;
+			d[i] = s[i];
 		}
 	}
-	else // copiar normalmente da frente pra trás
+	else
 	{
-		size_t i = 0;
+		i = 0;
 		while (i < n)
 		{
 			d[i] = s[i];
