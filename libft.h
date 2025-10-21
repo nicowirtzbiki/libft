@@ -6,7 +6,7 @@
 /*   By: nico <nico@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 17:04:05 by nwirtzbi          #+#    #+#             */
-/*   Updated: 2025/10/20 23:36:58 by nico             ###   ########.fr       */
+/*   Updated: 2025/10/21 14:50:48 by nico             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,11 +74,11 @@ char	*ft_strtrim(char const *s1, char const *set);
 // 27
 // char	**ft_split(char const *s, char c);
 // 28
-// char	*ft_itoa(int n);
+char	*ft_itoa(int n);
 // 29
-// char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 // 30
-// void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 // 31
 void	ft_putchar_fd(char c, int fd);
 // 32

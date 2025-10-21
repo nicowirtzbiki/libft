@@ -30,5 +30,4 @@ int	main(void)
 	close(fd);
 	printf("Verifica o arquivo 'char_output.txt' ;)\n");
 
-	return (0);
-}
+	return (0);}

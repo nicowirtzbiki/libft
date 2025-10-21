@@ -6,7 +6,7 @@
 #    By: nico <nico@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/15 11:23:25 by nwirtzbi          #+#    #+#              #
-#    Updated: 2025/10/20 23:37:20 by nico             ###   ########.fr        #
+#    Updated: 2025/10/21 14:50:32 by nico             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,6 +48,9 @@ ft_strdup.c \
 ft_substr.c \
 ft_strjoin.c \
 ft_strtrim.c \
+ft_itoa.c \
+ft_strmapi.c \
+ft_striteri.c \
 ft_putchar_fd.c \
 ft_putstr_fd.c \
 ft_putendl_fd.c \
@@ -89,4 +92,4 @@ re: fclean all
 
 # Testar
 test: all
-	gcc -I. mains/main_putchar.c libft.a -o test
+	gcc -I. mains/main_itoa.c libft.a -o test
