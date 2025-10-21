@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nico <nico@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: nwirtzbi <nwirtzbi@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 17:04:05 by nwirtzbi          #+#    #+#             */
-/*   Updated: 2025/10/21 14:50:48 by nico             ###   ########.fr       */
+/*   Updated: 2025/10/21 16:52:27 by nwirtzbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stddef.h>  // para size_t
 # include <limits.h> // SIZE_MAX
-# include <stdlib.h>  // para malloc, free
-# include <unistd.h>  // para write
+# include <stddef.h> // para size_t
+# include <stdlib.h> // para malloc, free
+# include <unistd.h> // para write
 
 // 1
 int		ft_isalpha(int c);
@@ -72,13 +72,13 @@ char	*ft_strjoin(char const *s1, char const *s2);
 // 26
 char	*ft_strtrim(char const *s1, char const *set);
 // 27
-// char	**ft_split(char const *s, char c);
+char	**ft_split(char const *s, char c);
 // 28
 char	*ft_itoa(int n);
 // 29
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 // 30
-void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 // 31
 void	ft_putchar_fd(char c, int fd);
 // 32

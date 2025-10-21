@@ -6,7 +6,7 @@
 #    By: nwirtzbi <nwirtzbi@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/15 11:23:25 by nwirtzbi          #+#    #+#              #
-#    Updated: 2025/10/21 16:20:06 by nwirtzbi         ###   ########.fr        #
+#    Updated: 2025/10/21 16:52:15 by nwirtzbi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,6 +48,7 @@ ft_strdup.c \
 ft_substr.c \
 ft_strjoin.c \
 ft_strtrim.c \
+ft_split.c \
 ft_itoa.c \
 ft_strmapi.c \
 ft_striteri.c \
@@ -55,15 +56,6 @@ ft_putchar_fd.c \
 ft_putstr_fd.c \
 ft_putendl_fd.c \
 ft_putnbr_fd.c
-
-# ft_split.c \
-# ft_itoa.c \
-# ft_strmapi.c \
-# ft_striteri.c \
-# ft_putchar_fd.c \
-# ft_putstr_fd.c \
-# ft_putendl_fd.c \
-#ft_putnbr_fd.c
 
 # Arquivos objeto gerados a partir dos fontes
 OBJ = $(SRC:.c=.o)
@@ -92,4 +84,4 @@ re: fclean all
 
 # Testar
 test: all
-	gcc -I. mains/main_itoa.c libft.a -o test
+	gcc -I. mains/main_split.c libft.a -o test
