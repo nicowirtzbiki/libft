@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nwirtzbi <nwirtzbi@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: nico <nico@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 14:58:18 by nwirtzbi          #+#    #+#             */
-/*   Updated: 2025/10/21 19:40:21 by nwirtzbi         ###   ########.fr       */
+/*   Updated: 2025/10/22 15:30:16 by nico             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 size_t count_words(char const *s, char c)
 {
@@ -34,15 +33,51 @@ size_t count_words(char const *s, char c)
     return (word_count);
 }
 
+int    copy_words(char const *s, char c, char **arr)
+{
+    size_t  i;
+    size_t  j;
+    size_t  start;
 
+    i = 0;
+    j = 0;
+    while (s[i])
+    {
+        while(s[i] && s[i] == c)
+            i++;
+        start = i;
+        while(s[i] && s[i] != c)
+            i++;
+        arr[j] = ft_substr(s, start, i - start);
+        if (!arr[j])
+        {
+            return (0);
+        }
+        j++;
+    }
+    arr[j] = NULL;
+    return (1);
+}
 
 char	**ft_split(char const *s, char c)
 {
-    size_t  word_count;
     char    **arr;
+    size_t  size;
 
-    word_count = count_words(s, c);
-    arr = malloc ((word_count + 1) * sizeof(char *));
+    if (!s)
+        return (NULL);
 
+    size = (count_words(s, c));
+    arr = malloc ((size + 1) * sizeof(char *));
+    if (!arr)
+        return (NULL);
 
+    if (!copy_words(s, c, arr))
+    {
+        for (j = 0; arr[j]; j++)
+            free(arr[j]);
+        free(arr);
+        return (NULL);
+    }
+    return (arr);   
 }
