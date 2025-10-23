@@ -6,14 +6,11 @@
 /*   By: nwirtzbi <nwirtzbi@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 13:08:41 by nwirtzbi          #+#    #+#             */
-/*   Updated: 2025/10/21 19:46:18 by nwirtzbi         ###   ########.fr       */
+/*   Updated: 2025/10/23 14:38:24 by nwirtzbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-//strdup
-//substr
 
 char	*ft_strdup(const char *s1)
 {

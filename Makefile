@@ -6,19 +6,16 @@
 #    By: nwirtzbi <nwirtzbi@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/15 11:23:25 by nwirtzbi          #+#    #+#              #
-#    Updated: 2025/10/21 16:52:15 by nwirtzbi         ###   ########.fr        #
+#    Updated: 2025/10/23 14:04:18 by nwirtzbi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
-# O make vai rodar a regra all: ele compila os arquivos.c em .o e depois junta na libft.a.
-# Depois, na regra test, ele compila o main.c junto com a libft.a e gera um executável chamado test.
 
 # Nome da biblioteca
 NAME = libft.a
 
 # Compilador e flags
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -I.
 
 # Lista de arquivos fonte
 SRC = \
@@ -63,7 +60,7 @@ OBJ = $(SRC:.c=.o)
 # Regras
 all: $(NAME)
 
-# Criar biblioteca a partir dos objetos
+# Criar biblioteca a partir dos objetos. 
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
 
@@ -84,4 +81,6 @@ re: fclean all
 
 # Testar
 test: all
-	gcc -I. mains/main_split.c libft.a -o test
+	$(CC) $(CFLAGS) mains/main_split.c $(NAME) -o test
+
+.PHONY: all clean fclean re test

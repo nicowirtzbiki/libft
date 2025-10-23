@@ -6,13 +6,13 @@
 /*   By: nwirtzbi <nwirtzbi@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 12:31:17 by nwirtzbi          #+#    #+#             */
-/*   Updated: 2025/10/21 17:32:10 by nwirtzbi         ###   ########.fr       */
+/*   Updated: 2025/10/23 13:23:38 by nwirtzbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	num_len(int n)
+static int	num_len(int n)
 {
 	int	len;
 
