@@ -6,12 +6,13 @@
 /*   By: nwirtzbi <nwirtzbi@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 19:07:18 by nwirtzbi          #+#    #+#             */
-/*   Updated: 2025/10/21 17:32:48 by nwirtzbi         ###   ########.fr       */
+/*   Updated: 2025/10/24 11:56:34 by nwirtzbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdint.h>
+#include <stdio.h>
 
 void	*ft_calloc(size_t count, size_t size)
 {
@@ -23,10 +24,6 @@ void	*ft_calloc(size_t count, size_t size)
 		return (NULL);
 	}
 	total = size * count;
-	if (count == 0 || size == 0)
-	{
-		total = 1;
-	}
 	ptr = malloc(total);
 	if (!ptr)
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: nwirtzbi <nwirtzbi@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 22:56:00 by nwirtzbi          #+#    #+#             */
-/*   Updated: 2025/10/21 16:50:59 by nwirtzbi         ###   ########.fr       */
+/*   Updated: 2025/10/24 12:16:01 by nwirtzbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,5 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	if (!s)
 		return ;
-	while (*s)
-		write(fd, s++, 1);
+	write(fd, s, ft_strlen(s));
 }

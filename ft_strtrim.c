@@ -6,7 +6,7 @@
 /*   By: nwirtzbi <nwirtzbi@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 17:53:01 by nwirtzbi          #+#    #+#             */
-/*   Updated: 2025/10/21 16:51:25 by nwirtzbi         ###   ########.fr       */
+/*   Updated: 2025/10/24 14:08:32 by nwirtzbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,5 @@ char	*ft_strtrim(char const *s1, char const *set)
 	{
 		end--;
 	}
-	return (ft_substr(s1, start, end - start));
+	return (ft_substr(s1, start, end - start + 1));
 }

@@ -3,11 +3,11 @@
 
 int main(void)
 {
-    char    *str1 = "Meu nome é Nicole";
+    char    *str1 = "hello!zzzzzzzz";
     char    **str2;
     int     i = 0;
 
-    str2 = ft_split(str1, ' ');
+    str2 = ft_split(str1, 'z');
     while (str2 [i])
     {
         ft_putstr_fd(str2[i], 1);
